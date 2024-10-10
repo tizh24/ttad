@@ -1,0 +1,105 @@
+/*  1. extenal
+h1{
+    color: aqua;
+    font-size: 30px;
+} */
+
+/*  2. class & id
+#first-heading{
+    color: red;
+     đối với id thì để dấu # đằng trước attribute và chỉ áp dụng cho 1 dòng
+}
+.second-headind{
+    color: red;
+    font-size: 30px;
+     đối với class thì để dấu chấm đằng trước attibute áp dụng cho nhìu dòng
+} */
+
+/*  3. CSS variable
+:root {
+    --text-color: red;
+}
+h1{
+    color: var(--text-color)
+}
+
+h2{
+    color: var(--text-color)
+}
+
+h3{
+    color: var(--text-color)
+} */
+
+/* :root {
+    --text-color: yellow ; 
+}
+h1{
+    color: var(--text-color);
+}
+h2{
+    color: var(--text-color);
+} 
+h3{
+    color: var(--text-color);
+} */
+
+/* các cách căn giữa trong css  */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: red;
+    height: 100px;
+
+    /* text-align: center;
+    có tính chất thừa kế dùng ở ông cha khi có nhìu ông con 
+    line-height: 100px;
+    điều chỉnh line height bằng chính độ dài của box thì sẽ được căn giữa box  */
+
+    /* display: flex;
+    đi kèm với margin: auto để căn giữa box tạo ra khoảng cách giữa các dòng chữ với box */
+
+    /* display: flex;
+    align-items: center;
+    căn theo chính giữa trục dọc  
+    justify-content: center;
+    căn theo trục chính 
+    -> linh động hơn  */
+
+    /*1. position: relative;
+    */
+    /* 2. gọi biến 
+    --height: 100px;
+    height: var(--height);
+    text-align: center; */
+
+    display: flex;
+}
+
+h3 {
+    /*1. position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    */
+    /*2. line-height: var(--height); */
+    margin: auto;
+    position: relative;
+
+}
+
+h3 {
+    content: "";
+    position: absolute;
+    left: -10px;
+    border-left: 3px solid #333;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}

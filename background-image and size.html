@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <title>Chu Thanh Tinh</title>
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="main.css">
+       <style>
+              html,
+              body {
+                     margin: 0px;
+                     padding: 0px;
+              }
+
+              .header {
+                     width: 50%;
+                     height: 50vh;
+                     /*/*  background-image: url(https://www.cardscanner.co/assets/new-img/img-to-text-og.png); /*liên kết nào xếp trước thì được ưu tiên đứng lên đầu */
+                     background-image: linear-gradient(0Deg, rgba(225, 225, 0, 0.7), #a07a7a);
+                     /*linear-gradient dãi màu chuyển gồm các thông số ( hướng xoay (tính bằng độ deg)  , màu điểm đầu, màu điểm cuối ) */
+                     background-size: 100%;
+                     background-clip: content-box;
+                     /*lấy từ phân content trở vào , padding - box lấy từ padding trở vào và tương tự */
+                     box-sizing: border-box;
+                     /*trả về giá trị của thông số cũ không bị thay đổi khi thêm những giá trị khác vào */
+                     background-repeat: no-repeat;
+                     border-radius: 20px;
+                     background-size: contain;
+                     /*contanin lấy chiều dài nhất của bức ảnh nhma ảnh không bị cắt xén */
+                     /*cover vẫn chọn cạnh dài của bức ảnh nhma chấp nhận việc ảnh bị cắt xén */
+              }
+
+              .box {
+                     /*background-origin*/
+                     width: 500px;
+                     height: 500px;
+                     background-image: url(https://fullstack.edu.vn/assets/images/f8_avatar.png);
+                     background-repeat: no-repeat;
+                     background-size: 100%;
+                     border: 20px dashed purple;
+                     padding: 20px;
+                     box-sizing: border-box;
+                     background-origin: border-box;
+
+              }
+
+              .background-position {}
+       </style>
+</head>
+
+<body>
+       <div class="header"></div>
+       <div class="box"></div>
+       <div class="background-position"></div>
+</body>
+
+</html>
